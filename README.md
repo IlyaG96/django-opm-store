@@ -8,26 +8,32 @@
 
 Склонируйте репозиторий:
 ```bash
-$ git clone git@github.com:IlyaG96/Work_searcher_HH_SJ.git
+$ git clone https://github.com/IlyaG96/django-opm-store.git
 ```
 
 Создайте в этой папке виртуальное окружение:
 ```bash
-$ python3 -m venv [полный путь до папки Work_searcher_HH_SJ] env
+$ python3 -m venv [полный путь до папки django-opm-store] env
 ```
 
-Активируйте виртуальное окружение и установите зависимости:
+Активируйте виртуальное окружение и установите все необходимые пакеты:
 ```bash
-$ cd Work_searcher_HH_SJ
+$ cd django-opm-store
 $ source env/bin/activate
 $ pip install -r requirements.txt
 ```
 ## Использование
-Заполните прилагающийся .env.exapmle файл и переименуйте его в .env или иным образом задайте переменные среды:
+Заполните прилагающийся .env.example файл и переименуйте его в .env или иным образом задайте переменные среды:
 
 ```bash
-SJOB_TOKEN=Токен Вашего приложения на сайте SuperJob
-LANGUAGES='Python Java C PHP C# Go'
+ENGINE_DB=''
+HOST_DB=''
+PORT_DB=''
+NAME_DB=''
+USER_DB=''
+PASSWORD_DB=''
+SECRET_KEY=''
+DEBUG=''
 ```
 Переменная `LANGUAGES` содержит список языков, для которых будет найдена средняя зарплата. Запятые ставить не надо. Только пробелы
 
