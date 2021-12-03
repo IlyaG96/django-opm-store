@@ -1,0 +1,6 @@
+.env
+env
+pyproject.toml
+poetry.lock
+__pycache__
+.idea
