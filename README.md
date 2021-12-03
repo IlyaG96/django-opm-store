@@ -63,4 +63,9 @@ $ python manage.py runserver
 
 Есть возможность узнать, кто в данный момент находится в хранилище  
 
-![Картинка](https://downloader.disk.yandex.ru/preview/fcf2f1fec253d98c1249c8db4e9037ce43658fdc7b95cb434aedd1cdb6683983/61aac418/1LhluN7EQIyNZiyERQ8Y-lq6MLDJD8GchacC7YJ1fGn728OqJX_w2-e90Tv5QkHmGbT2W8dpswnk4BIT--9VaQ%3D%3D?uid=0&filename=%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202021-12-04%20%D0%B2%2008.08.07.png&disposition=inline&hash=&limit=0&content_type=image%2Fpng&owner_uid=0&tknv=v2&size=512x512)
+![Картинка](https://downloader.disk.yandex.ru/preview/fcf2f1fec253d98c1249c8db4e9037ce43658fdc7b95cb434aedd1cdb6683983/61aac418/1LhluN7EQIyNZiyERQ8Y-lq6MLDJD8GchacC7YJ1fGn728OqJX_w2-e90Tv5QkHmGbT2W8dpswnk4BIT--9VaQ%3D%3D?uid=0&filename=%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202021-12-04%20%D0%B2%2008.08.07.png&disposition=inline&hash=&limit=0&content_type=image%2Fpng&owner_uid=0&tknv=v2&size=512x512)  
+
+
+### Дисклеймер в самом конце
+
+Проект написан в учебных целях devman.org
