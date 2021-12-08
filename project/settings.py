@@ -6,15 +6,18 @@ env.read_env()
 
 DEBUG = env.bool("DEBUG", default=False)
 SECRET_KEY = env.str("SECRET_KEY")
+ALLOWED_HOSTS = env.list("ALLOWED_HOSTS")
 
-DATABASES = {"default": env.dj_db_url("DATABASE_URL")}
+DATABASES = {
+    "default": env.dj_db_url("DATABASE_URL")
+}
 
 
 INSTALLED_APPS = ['datacenter']
 
 ROOT_URLCONF = "project.urls"
 
-ALLOWED_HOSTS = ['*']
+
 
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
