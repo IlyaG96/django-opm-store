@@ -37,23 +37,19 @@ python-dotenv==0.19.2
 Заполните прилагающийся .env.example файл и переименуйте его в .env или иным образом задайте переменные среды:
 
 ```bash
-ENGINE_DB=''
-HOST_DB=''
-PORT_DB=''
-NAME_DB=''
-USER_DB=''
-PASSWORD_DB=''
 SECRET_KEY=''
 DEBUG=''
+DATABASE_URL=''
 ```
 
 ```python
 SECRET_KEY - секретный ключ для запуска сайте
 DEBUG - режим отладки: True/False
+DATABASE_URL='postgres://USER:PASSWORD@HOST:PORT/NAME'
 ```
-### Как получить переменные окружения?
-Для получения всех остальных параметров переменной окружения обратитесь, пожалуйста, к руководству Вашего филиала
 
+### Как получить переменные окружения?
+Для получения значений `USER`, `PASSWORD`, `HOST`, `PORT` и `NAME` обратитесь к руководству филиала Вашего банка
 ## Запуск
 ```bash
 $ python manage.py runserver
