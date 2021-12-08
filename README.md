@@ -16,13 +16,23 @@ $ git clone https://github.com/IlyaG96/django-opm-store.git
 ```bash
 $ python3 -m venv [полный путь до папки django-opm-store] env
 ```
-
+### Необходимые пакеты
 Активируйте виртуальное окружение и установите все необходимые пакеты:
 ```bash
 $ cd django-opm-store
 $ source env/bin/activate
 $ pip install -r requirements.txt
 ```
+Список необходимых пакетов (можно установить вручную, используя команду `pip install`)
+
+```text
+pytz==2017.2
+django==1.11.*
+psycopg2-binary==2.8.*
+python-dotenv==0.19.2
+```
+
+
 ## Переменные окружения
 Заполните прилагающийся .env.example файл и переименуйте его в .env или иным образом задайте переменные среды:
 
