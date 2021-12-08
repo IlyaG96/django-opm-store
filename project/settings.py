@@ -1,33 +1,16 @@
+from environs import Env
 import os
-from dotenv import load_dotenv
-load_dotenv()
 
-ENGINE_DB = os.getenv("ENGINE_DB")
-HOST_DB = os.getenv("HOST_DB")
-PORT_DB = os.getenv("PORT_DB")
-NAME_DB = os.getenv("NAME_DB")
-USER_DB = os.getenv("USER_DB")
-PASSWORD_DB = os.getenv("PASSWORD_DB")
+env = Env()
+env.read_env()
 
-SECRET_KEY = os.getenv("SECRET_KEY")
+DEBUG = env.bool("DEBUG", default=False)
+SECRET_KEY = env.str("SECRET_KEY")
 
-DEBUG_MODE = os.getenv("DEBUG").capitalize()
+DATABASES = {"default": env.dj_db_url("DATABASE_URL")}
 
-DATABASES = {
-    'default': {
-        'ENGINE': ENGINE_DB,
-        'HOST': HOST_DB,
-        'PORT': PORT_DB,
-        'NAME': NAME_DB,
-        'USER': USER_DB,
-        'PASSWORD': PASSWORD_DB,
-    }
-}
 
 INSTALLED_APPS = ['datacenter']
-
-
-DEBUG = DEBUG_MODE
 
 ROOT_URLCONF = "project.urls"
 
