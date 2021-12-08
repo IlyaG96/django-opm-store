@@ -3,7 +3,7 @@
 
 Это - внутренний репозиторий банка "Сияние", вы не сможете его запустить, если не обладаете нужными ключами доступа к базе данных, но код проекта может быть использован в учебных целях.
 
-## Установка, зависимости и виртуальное окружение?
+## Установка, зависимости и виртуальное окружение
 
 Вам понадобится установленный Python 3.6-3.9 и git.
 
@@ -27,9 +27,10 @@ $ pip install -r requirements.txt
 
 ```text
 pytz==2017.2
-django==1.11.*
-psycopg2-binary==2.8.*
-python-dotenv==0.19.2
+Django==1.11.29
+psycopg2-binary==2.8.6
+environs==9.3.5
+dj-database-url==0.5.0
 ```
 
 
@@ -40,12 +41,14 @@ python-dotenv==0.19.2
 SECRET_KEY=''
 DEBUG=''
 DATABASE_URL=''
+ALLOWED_HOSTS=''
 ```
 
 ```python
-SECRET_KEY - секретный ключ для запуска сайте
+SECRET_KEY - секретный ключ для запуска сайта
 DEBUG - режим отладки: True/False
-DATABASE_URL='postgres://USER:PASSWORD@HOST:PORT/NAME'
+DATABASE_URL='postgres://USER:PASSWORD@HOST:PORT/NAME' - 'postgres' в случае PSQL
+ALLOWED_HOSTS='127.0.0.1,localhost' - разрешает запуск приложения на локальном сервере
 ```
 
 ### Как получить переменные окружения?
